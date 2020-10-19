@@ -20,10 +20,7 @@ public class demo {
             if (((s1 + s2) <= s3) || ((s3 + s2) <= s1) || ((s3 + s1) <= s2))
                 throw new IllegalTriangleException();
             else {
-                System.out.println("The area of the triangle is: " + obj.getArea());
-                System.out.println("The perimeter of the triangle is: " + obj.getPerimeter());
-                System.out.println("The color of the triangle is: " + obj.getColor());
-                System.out.println("Filled or not? " + obj.isFilled());
+                System.out.println(obj.toString());
             }
 
         } catch (IllegalTriangleException e) {
